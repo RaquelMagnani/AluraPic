@@ -1,8 +1,5 @@
 <ap-photo
-url="https://images.unsplash.com/photo-1618035881605-dfe8d7eb387b?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-description="Floresta de pinheiros com neblina"
-></ap-photo>
-<ap-photo
-url="https://images.unsplash.com/photo-1618124894015-508529b8a780?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=634&q=80"
-description ="flores de cerejeira"
+  *ngFor="let photo of photos"
+  [url]="photo.url"
+  [description]="photo.description"
 ></ap-photo>
